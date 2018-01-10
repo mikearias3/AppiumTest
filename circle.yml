@@ -34,7 +34,7 @@ jobs:
             sudo pip install Appium-Python-Client
             sudo pip install selenium
             sudo apt-get install software-properties-common
-            sudo apt-add-repository ppa:qameta/allure
+            sudo apt-add-repository ppa:qameta/allure -y
             sudo apt-get update
             sudo apt-get install allure
 
