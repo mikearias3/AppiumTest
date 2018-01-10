@@ -44,7 +44,7 @@ jobs:
       - run:
           name: run tests
           command:
-            python3 -m pytest android_simple.py --alluredir ./results/
+            python3 -m pytest android_simple.py --alluredir ./results
 
       - store_artifacts:
           path: test-reports
