@@ -44,6 +44,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
+            ls
             python3 -m pytest android_simple.py
 
       - store_artifacts:
