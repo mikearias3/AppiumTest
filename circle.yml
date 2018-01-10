@@ -29,8 +29,10 @@ jobs:
 
       - run:
           name: install dependencies
-          command:
+          command: |
             sudo pip3 install pytest
+            sudo pip install Appium-Python-Client
+            sudo pip install selenium
 
 #      - save_cache:
 #          paths:
