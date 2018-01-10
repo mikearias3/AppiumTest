@@ -2,6 +2,7 @@ import os
 from time import sleep
 
 import unittest
+import pytest
 
 from appium import webdriver
 
@@ -33,24 +34,33 @@ class SimpleAndroidTests(unittest.TestCase):
             "http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
 
         WebDriverWait(self.driver, 40).until(EC.visibility_of_element_located((MobileBy.ID, "com.vice.viceforandroid:id/textview_skip_btn")))
-        el = self.driver.find_element_by_id("com.vice.viceforandroid:id/textview_skip_btn")
-        el.click()
-        el = self.driver.find_element_by_id("com.vice.viceforandroid:id/imageview_viceland_toolbar")
-        el.click()
-        el = self.driver.find_element_by_xpath("//android.widget.TextView[@text='POPULAR']")
-        el.click()
-        el = self.driver.find_element_by_xpath("//android.widget.TextView[@text='LATEST']")
-        el.click()
-        el = self.driver.find_element_by_id("com.vice.viceforandroid:id/bb_bottom_bar_item_container")
-        assert el.is_displayed()
-        el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_read")
-        el.click()
-        el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_watch")
-        el.click()
-        el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_explore")
-        el.click()
-        el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_account")
-        el.click()
+        with pytest.allure.step("Click Skip button"):
+            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/textview_skip_btn")
+            el.click()
+        with pytest.allure.step("Verify Logo is present"):
+            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/imageview_viceland_toolbar")
+            el.click()
+        with pytest.allure.step("Verify Popular Tab is present"):
+            el = self.driver.find_element_by_xpath("//android.widget.TextView[@text='POPULAR']")
+            el.click()
+        with pytest.allure.step("Verify Latest Tab is present"):
+            el = self.driver.find_element_by_xpath("//android.widget.TextView[@text='LATEST']")
+            el.click()
+        with pytest.allure.step("Verify footer is present"):
+            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/bb_bottom_bar_item_container")
+            assert el.is_displayed()
+        with pytest.allure.step("Click Read button"):
+            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_read")
+            el.click()
+        with pytest.allure.step("Click Watch button"):
+            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_watch")
+            el.click()
+        with pytest.allure.step("Click Explore button"):
+            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_explore")
+            el.click()
+        with pytest.allure.step("Click Account button"):
+            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_account")
+            el.click()
 
     def tearDown(self):
         # end the session
