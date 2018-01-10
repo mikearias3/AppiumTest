@@ -42,8 +42,7 @@ jobs:
       # run tests!
       - run:
           name: run tests
-          command: |
-#            . venv/bin/activate
+          command:
             ls
             python3 -m pytest android_simple.py
 
