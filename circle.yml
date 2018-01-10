@@ -41,7 +41,7 @@ jobs:
       - run:
           name: run tests
           command:
-          ls
+            ls
 #            python3 -m pytest android_simple.py
 
       - store_artifacts:
