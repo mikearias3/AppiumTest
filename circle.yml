@@ -33,7 +33,7 @@ jobs:
             sudo pip3 install pytest
             sudo pip install Appium-Python-Client
             sudo pip install selenium
-            sudo brew install allure
+            sudo apt-get install allure
 
 #      - save_cache:
 #          paths:
