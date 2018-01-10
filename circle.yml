@@ -27,10 +27,10 @@ jobs:
 #          # fallback to using the latest cache if no exact match is found
 #          - v1-dependencies-
 
-      - run:
-          name: install dependencies
-          command:
-            pip3 install -U pytest
+#      - run:
+#          name: install dependencies
+#          command:
+#            pip3 install -U pytest
 
 #      - save_cache:
 #          paths:
@@ -40,7 +40,8 @@ jobs:
       # run tests!
       - run:
           name: run tests
-          command:
+          command: |
+            pip3 install -U pytest
             python3 -m pytest android_simple.py
 
       - store_artifacts:
