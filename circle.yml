@@ -41,8 +41,7 @@ jobs:
       - run:
           name: run tests
           command:
-            ls
-#            python3 -m pytest android_simple.py
+            python3 -m pytest android_simple.py
 
       - store_artifacts:
           path: test-reports
