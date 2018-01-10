@@ -33,10 +33,10 @@ jobs:
             sudo pip3 install pytest
             sudo pip install Appium-Python-Client
             sudo pip install selenium
-            sudo apt-get install software-properties-common
-            sudo apt-add-repository -y ppa:qameta/allure
+            sudo apt-get install software-properties-common -y
+            sudo apt-add-repository ppa:qameta/allure -y
             sudo apt-get update
-            sudo apt-get install allure
+            sudo apt-get install allure -y
 
 #      - save_cache:
 #          paths:
