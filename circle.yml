@@ -47,5 +47,5 @@ jobs:
             python3 -m pytest android_simple.py --alluredir ./results
 
       - store_artifacts:
-          path: /results
+          path: /AppiumTest/results
           destination: test-reports
