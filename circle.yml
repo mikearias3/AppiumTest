@@ -43,7 +43,7 @@ jobs:
       # run tests!
       - run:
           name: run tests
-          command:
+          command: |
             mkdir results
             python3 -m pytest android_simple.py --alluredir results/
 
