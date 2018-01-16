@@ -16,10 +16,11 @@ subprocess.call([
 
 # Run the test
 subprocess.call([
-    'pytest',
+    'python3',
+    "-m",
+    "pytest",
     'android_simple.py',
-    PLATFORM,
-    '--alluredir=test-report/{}'.format(VERTICAL)
+    '--alluredir=test-report/'
 ])
 
 # Allure plugin
