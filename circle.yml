@@ -27,6 +27,10 @@ jobs:
 #          # fallback to using the latest cache if no exact match is found
 #          - v1-dependencies-
 
+      - restore_cache:
+          keys:
+          - allure-report
+
       - run:
           name: install dependencies
           command: |
@@ -35,17 +39,24 @@ jobs:
             sudo pip install selenium
             sudo pip install allure-pytest
 
-#      - save_cache:
-#          paths:
-#            - ./venv
-#          key: v1-dependencies-{{ checksum "requirements.txt" }}
-
       # run tests!
       - run:
           name: run tests
-          command: |
-            mkdir results
-            python3 -m pytest android_simple.py --alluredir results/
+          command: 
+            python3 run_env.py
+
+      # save allure package and the last html allure report cache
+      - save_cache:
+          key: allure-report-{{ checksum "test-reports.tar.gz" }}
+          paths:
+              - ./allure-2.4.1
+              - ./test-reports.tar.gz
+              - ./test-report.tar.gz
+
+
+      - store_artifacts:
+          path: test-reports
+          destination: test-reports
 
       - store_artifacts:
           path: results/
