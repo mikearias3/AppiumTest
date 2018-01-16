@@ -56,7 +56,6 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-#            python3 -m pytest android_simple.py --alluredir test-report/
             python3 run_env.py
 
       # save allure package and the last html allure report cache
