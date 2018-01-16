@@ -2,7 +2,7 @@ requests==2.18.1
 selenium==3.3.3
 assertlib==0.3.2
 pyvirtualdisplay==0.2.1
-pytest==3.0.7
+pytest==3.3.0
 pytest-allure-adaptor==1.7.8
 pytest-xdist==1.17.1
 pytest-selenium==1.11.1
