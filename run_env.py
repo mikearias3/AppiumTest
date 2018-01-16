@@ -18,7 +18,7 @@ subprocess.call([
 subprocess.call([
     'pytest',
     'android_simple.py',
-    '--alluredir=./test-report/'
+    '--alluredir=test-report/'
 ])
 
 # Allure plugin

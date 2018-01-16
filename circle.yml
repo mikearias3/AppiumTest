@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: circleci/python:3.6.1
+      - image: hancheng/circleci-python3.6-java8
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -40,11 +40,6 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-#            sudo pip install Appium-Python-Client
-#            sudo pip install allure-pytest
-#            sudo apt-get install unzip
-#            wget -O allure-2.5.0.zip https://bintray.com/qameta/generic/download_file?file_path=io%2Fqameta%2Fallure%2Fallure%2F2.5.0%2Fallure-2.5.0.zip
-#            unzip allure-2.5.0.zip
 
       - save_cache:
           paths:
