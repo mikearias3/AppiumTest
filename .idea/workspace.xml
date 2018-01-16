@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1041bcbf-caa7-413b-b14e-604b95b1773b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/plugin.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/junit-xml-plugin/junit-xml-plugin-2.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/packages-plugin/plugin.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/trx-plugin/trx-plugin-2.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xctest-plugin/xctest-plugin-2.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xunit-xml-plugin/xunit-xml-plugin-2.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/bin/allure" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/bin/allure.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/config/allure-cucumber.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/config/allure-junit.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/config/allure.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/allure-plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/static/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/allure-plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/static/custom-logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/static/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/junit-xml-plugin/allure-plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/packages-plugin/allure-plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/packages-plugin/static/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/allure-plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/static/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/static/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/trx-plugin/allure-plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xctest-plugin/allure-plugin.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xunit-xml-plugin/allure-plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,17 +13,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="circle.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            <state relative-caret-position="232">
+              <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allure" pinned="false" current-in-tab="true">
+      <file leaf-file-name="allure" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/allure/bin/allure">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -318,6 +293,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/allure/bin/allure">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -328,16 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allure/bin/allure">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="232">
+          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
           <folding />
         </state>
       </provider>
