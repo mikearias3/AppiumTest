@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1041bcbf-caa7-413b-b14e-604b95b1773b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/plugin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/junit-xml-plugin/junit-xml-plugin-2.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/packages-plugin/plugin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/trx-plugin/trx-plugin-2.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xctest-plugin/xctest-plugin-2.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xunit-xml-plugin/xunit-xml-plugin-2.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/bin/allure" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/bin/allure.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/config/allure-cucumber.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/config/allure-junit.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/config/allure.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/allure-plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/behaviors-plugin/static/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/allure-plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/static/custom-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/custom-logo-plugin/static/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/junit-xml-plugin/allure-plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/packages-plugin/allure-plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/packages-plugin/static/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/allure-plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/static/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/screen-diff-plugin/static/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/trx-plugin/allure-plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xctest-plugin/allure-plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allure/plugins/xunit-xml-plugin/allure-plugin.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="circle.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="230">
+              <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allure" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/allure/bin/allure">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,6 +145,17 @@
               <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
+              <item name="allure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppiumTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppiumTest" type="462c0819:PsiDirectoryNode" />
+              <item name="allure" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -161,6 +206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-339" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.244713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -169,7 +215,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3438849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3438849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -264,14 +310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allure/bin/allure">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_env.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -290,8 +328,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="230">
+          <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/allure/bin/allure">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
