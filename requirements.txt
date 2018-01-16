@@ -10,4 +10,3 @@ pytest-variables==1.7.0
 virtualenv
 pytest-rerunfailures
 pyemojify
-appium
