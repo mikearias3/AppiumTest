@@ -30,7 +30,7 @@ subprocess.call([
     test_reports
 ])
 subprocess.call([
-    "./allure-2.4.1/bin/allure",
+    "./allure-2.5.0/bin/allure",
     "generate",
     test_report,
     "-c",
