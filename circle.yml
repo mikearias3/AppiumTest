@@ -15,6 +15,9 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
 
+    environment:
+      - TOKEN: "5bcc1fa47397ddc036e3575fec31517f80e1c769"
+
     working_directory: ~/AppiumTest
 
     steps:
@@ -39,6 +42,9 @@ jobs:
             pip install -r requirements.txt
             sudo pip install Appium-Python-Client
             sudo pip install allure-pytest
+            sudo apt-get install unzip
+            wget -O allure-2.5.0.zip https://bintray.com/qameta/generic/download_file?file_path=io%2Fqameta%2Fallure%2Fallure%2F2.5.0%2Fallure-2.5.0.zip
+            unzip allure-2.5.0.zip
 
       - save_cache:
           paths:
@@ -56,15 +62,11 @@ jobs:
       - save_cache:
           key: allure-report-{{ checksum "test-reports.tar.gz" }}
           paths:
-              - ./allure-2.4.1
+              - ./allure-2.5.0
               - ./test-reports.tar.gz
               - ./test-report.tar.gz
 
 
       - store_artifacts:
           path: test-reports
-          destination: test-reports
-
-      - store_artifacts:
-          path: results/
           destination: test-reports
