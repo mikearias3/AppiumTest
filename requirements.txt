@@ -11,4 +11,3 @@ virtualenv
 pytest-rerunfailures
 pyemojify
 Appium-Python-Client
-allure-pytest
