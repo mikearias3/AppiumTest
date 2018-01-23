@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1041bcbf-caa7-413b-b14e-604b95b1773b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack_notification_plugin.py" afterPath="$PROJECT_DIR$/slack_notification_plugin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slack.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,14 +23,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slack_notification_plugin.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="slack_notification_plugin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slack_notification_plugin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
+            <state relative-caret-position="292">
+              <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slack.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/slack.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,8 +80,8 @@
       <file leaf-file-name="circleci_allure_plugin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/circleci_allure_plugin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-600">
-              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="154">
+              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -97,6 +107,8 @@
       <find>smo</find>
       <find>trend</find>
       <find>expo</find>
+      <find>slack_message</find>
+      <find>slack</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,6 +124,7 @@
         <option value="$PROJECT_DIR$/run_env.py" />
         <option value="$PROJECT_DIR$/circle.yml" />
         <option value="$PROJECT_DIR$/slack_notification_plugin.py" />
+        <option value="$PROJECT_DIR$/slack.json" />
       </list>
     </option>
   </component>
@@ -391,8 +404,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circleci_allure_plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="154">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -401,11 +414,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slack_notification_plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
+        <state relative-caret-position="292">
+          <caret line="165" column="0" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
