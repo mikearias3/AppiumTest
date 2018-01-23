@@ -69,7 +69,7 @@ elif data['why'] == "api":
     why = " ; triggered by api "
 
 # capture BASE_URL from test file
-with open('./smoke/test_{}.py'.format(VERTICAL)) as f:
+with open('./android_simple.py') as f:
     for line in f:
         if 'BASE_URL = ' in line:
             exec(line)
