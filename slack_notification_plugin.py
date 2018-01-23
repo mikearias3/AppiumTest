@@ -106,7 +106,7 @@ last_status = 'None'
 with open('./test-reports/' + VERTICAL + '/history/history-trend.json', 'r') as file:
     trend = json.load(file)
 if len(trend) > 1:
-    if trend[1]['failed'] > 0:
+    if trend[1]['data']['failed'] > 0:
         last_status = 'Failure'
     else:
         last_status = 'Success'
