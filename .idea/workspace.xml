@@ -26,8 +26,8 @@
       <file leaf-file-name="slack_notification_plugin.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slack_notification_plugin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+            <state relative-caret-position="154">
+              <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -96,6 +96,7 @@
       <find>test_suites_name</find>
       <find>smo</find>
       <find>trend</find>
+      <find>expo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -400,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slack_notification_plugin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        <state relative-caret-position="154">
+          <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

@@ -135,7 +135,7 @@ time = '%d hours %d minutes %d seconds' % convert_millis(run_time)
 
 
 # capture information from summary json file
-with open('./test-reports/' + VERTICAL + '/export/summary.json', 'r') as file:
+with open('./test-reports/' + VERTICAL + '/widgets/summary.json', 'r') as file:
     summary = json.load(file)
 passed = summary['statistic']['passed']
 skipped = summary['statistic']['skipped']
