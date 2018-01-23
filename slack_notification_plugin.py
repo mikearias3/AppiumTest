@@ -49,8 +49,8 @@ for i in data['steps']:
                 and 'run_env.py' in action['bash_command']:
             test_suite_name = i['name']
 
-PLATFORM = os.getenv("PLATFORM") or "Windows-10-Chrome-61"
-VERTICAL = os.getenv("VERTICAL") or "tonic"
+# PLATFORM = os.getenv("PLATFORM") or "Windows-10-Chrome-61"
+# VERTICAL = os.getenv("VERTICAL") or "tonic"
 
 for git in data['all_commit_details']:
     commit_url = git['commit_url']
