@@ -53,6 +53,12 @@ jobs:
             . venv/bin/activate
             python3 run_env.py
 
+      - run:
+            name: Publish Slack Notification
+            command: |
+                . venv/bin/activate
+                python3 slack_notification_plugin/slack_notification_plugin.py
+
       # save allure package and the last html allure report cache
       - save_cache:
           key: allure-report-{{ checksum "test-reports.tar.gz" }}
