@@ -27,7 +27,7 @@ class SimpleAndroidTests(unittest.TestCase):
             'os_version': '7.1',
             'device': 'Google Pixel',
             'automationName': 'Appium',
-            'app': 'bs://17291db3f312c9f7d3bc84822c6335df04837776'
+            'app': 'bs://5d5bcd4aa7920294a9aedaf10b4f2aa5d37dc0c1'
         }
 
         self.driver = webdriver.Remote(
