@@ -17,7 +17,7 @@ subprocess.call([
 # Run the test
 subprocess.call([
     'pytest',
-    'android_simple.py',
+    'test-cases/android_simple.py',
     '--alluredir=test-report/{}'.format(VERTICAL)
 ])
 
