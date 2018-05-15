@@ -24,7 +24,7 @@ subprocess.call([
 # Allure plugin
 subprocess.call([
     "python3",
-    "circleci_allure_plugin.py",
+    "plugins/circleci_allure_plugin.py",
     test_report,
     test_reports
 ])
