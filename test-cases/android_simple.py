@@ -1,70 +1,55 @@
 import os
-from time import sleep
-
 import unittest
-import pytest
 
-from appium import webdriver
+from pageobjects.account_section import AccountSection
+from pageobjects.explore_section import ExploreSection
+from pageobjects.read_section import ReadSection
+from pageobjects.watch_section import WatchSection
+from pageobjects.welcome_overlay import WelcomeOverlay
+from webdriver.webdriver import Driver
 
 # Returns abs path relative to this file and not cwd
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from appium.webdriver.common.mobileby import MobileBy
-
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
 
-userName = "michaelarias1"
-accessKey = "kWuyYHGyh4YJG1fkqYhw"
-
 
 class SimpleAndroidTests(unittest.TestCase):
 
-    def test_find_elements(self):
-        desired_caps = {
-            'os_version': '7.1',
-            'device': 'Google Pixel',
-            'automationName': 'Appium',
-            'app': 'bs://10db4ee5484678b9c8aa138ade5dfd041d7ee167'
-        }
+    def setUp(self):
+        self.driver = Driver()
+        welcome_overlay = WelcomeOverlay(self.driver)
+        welcome_overlay.click_skip_button()
 
-        self.driver = webdriver.Remote(
-            "http://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub", desired_caps)
+    def test_user_taps_read_button(self):
+        read_section = ReadSection(self.driver)
+        read_section.click_read_button()
+        read_section.verify_user_is_in_read_section()
 
-        WebDriverWait(self.driver, 40).until(EC.visibility_of_element_located((MobileBy.ID, "com.vice.viceforandroid:id/textview_skip_btn")))
-        with pytest.allure.step("Click Skip button"):
-            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/textview_skip_btn")
-            el.click()
-        with pytest.allure.step("Verify Logo is present"):
-            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/imageview_viceland_toolbar")
-            el.click()
-        with pytest.allure.step("Verify Popular Tab is present"):
-            el = self.driver.find_element_by_xpath("//android.widget.TextView[@text='POPULAR']")
-            el.click()
-        with pytest.allure.step("Verify Latest Tab is present"):
-            el = self.driver.find_element_by_xpath("//android.widget.TextView[@text='LATEST']")
-            el.click()
-        with pytest.allure.step("Verify footer is present"):
-            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/bb_bottom_bar_item_container")
-            assert el.is_displayed()
-        with pytest.allure.step("Click Read button"):
-            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_read")
-            el.click()
-        with pytest.allure.step("Click Watch button"):
-            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_watch")
-            el.click()
-        with pytest.allure.step("Click Explore button"):
-            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_explore")
-            el.click()
-        with pytest.allure.step("Click Account button"):
-            el = self.driver.find_element_by_id("com.vice.viceforandroid:id/nav_account")
-            el.click()
+    def test_user_taps_watch_button(self):
+        read_section = ReadSection(self.driver)
+        read_section.click_watch_button()
+
+        watch_section = WatchSection(self.driver)
+        watch_section.verify_user_is_in_watch_section()
+
+    def test_user_taps_explore_button(self):
+        read_section = ReadSection(self.driver)
+        read_section.click_explore_button()
+
+        explore_section = ExploreSection(self.driver)
+        explore_section.verify_user_is_in_explore_section()
+
+    def test_user_taps_account_button(self):
+        read_section = ReadSection(self.driver)
+        read_section.click_account_button()
+
+        account_section = AccountSection(self.driver)
+        account_section.verify_user_is_in_account_section()
 
     def tearDown(self):
         # end the session
-        self.driver.quit()
+        self.driver.instance.quit()
 
 
 if __name__ == '__main__':
