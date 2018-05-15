@@ -153,7 +153,7 @@ text = status + belong + why
 
 
 # Post custom json data to slack notification
-with open('slack.json', 'r') as file:
+with open('./plugins/slack.json', 'r') as file:
     slack_message = json.load(file)
 
 for slack in slack_message["attachments"]:
