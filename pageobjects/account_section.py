@@ -10,7 +10,10 @@ class AccountSection(BasePage):
     def __init__(self, driver):
         BasePage.__init__(self, driver)
         self.driver = driver
+        self.about_header = WebDriverWait(self.driver.instance, 5).until(
+            EC.visibility_of_element_located((
+                MobileBy.ID, "com.vice.viceforandroid:id/about_section_header")))
 
+    @pytest.allure.step("Verify the user is in the ACCOUNT Section")
     def verify_user_is_in_account_section(self):
-        # TODO: Not yet implemented
-        assert False
+        assert self.about_header.is_displayed(), "About header is not showing up"
